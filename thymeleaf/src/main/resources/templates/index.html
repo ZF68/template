@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="cmn-Hans">
+<head th:include="/layout/header :: header" th:with="title='Thymeleaf'">
+</head>
+<body>
+<div th:each="name:${userList}">
+    <p th:if="${name}=='王五'">下面是王五</p>
+    <p th:text="${name}">姓名</p>
+</div>
+</body>
+</html>
